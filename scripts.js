@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            let message = "Olá! Gostaria de realizar a seguinte compra:%0A%0A";
+            let message = "Olá! Gostaria de realizar a seguinte compra:";
             let total = 0;
             let hasDecant = false;
 
@@ -451,11 +451,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 message += `- ${item.name}${isDecant ? ' (DECANT)' : ''}: ${item.quantity} unidade(s) - R$ ${itemTotal.toLocaleString('pt-BR')}%0A`;
             });
 
-            message += `%0ATotal: R$ ${total.toLocaleString('pt-BR')}%0A%0A`;
+            message += `ATotal: R$ ${total.toLocaleString('pt-BR')}`;
             message += "Por favor, preciso das informações para proceder com o pagamento. Obrigado.";
 
             if (hasDecant) {
-                message += "%0A%0A*Observação: os produtos marcados com 'DECANT' são fragrâncias no formato de 30ml.*";
+                message += "*Observação: os produtos marcados com 'DECANT' são fragrâncias no formato de 30ml.*";
             }
 
             // número de WhatsApp permanece o mesmo que você usou
