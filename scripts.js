@@ -551,11 +551,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const date = document.getElementById('date').value;
                 const message = document.getElementById('message').value;
                 
-                const whatsappMessage = `*Solicitação de Cita Privada*%0A%0A*Nome:* ${name}%0A*Email:* ${email}%0A*Telefone:* ${phone}%0A*Data Preferida:* ${date}%0A*Interesse Especial:* ${message}`;
+                const whatsappMessage = `*Solicitação Privada**Nome:* ${name}*Email:* ${email}*Telefone:* ${phone}*Data Preferida:* ${date}*Interesse Especial:* ${message}`;
                 
                 window.open(`https://wa.me/5547988606451?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
                 this.reset();
-                alert('Obrigado! Recebemos sua solicitação de citação.');
+                alert('Obrigado! Recebemos sua solicitação.');
             });
         }
     }
